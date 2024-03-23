@@ -77,9 +77,9 @@ GROUP_START_BTN = [
 
 ALIVE_BTN = [
     [
-        ib(text="UPDATES", url="https://t.me/ANIME_NETWORK07"),
-        ib(text="SUPPORT", url="https://t.me/SHINOBI_HEADQUATERS"),
-        ib(text="NETWORK", url="https://t.me/SHINOBI_NETWORK"),
+        ib(text="𝚄𝙿𝙳𝙰𝚃𝙴", url="https://t.me/ANIME_NETWORK07"),
+        ib(text="𝚂𝚄𝙿𝙿𝙾𝚁𝚃", url="https://t.me/SHINOBI_HEADQUATERS"),
+    
     ],
     [
         ib(
