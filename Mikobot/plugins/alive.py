@@ -22,9 +22,9 @@ from Mikobot import BOT_NAME, app
 @app.on_message(filters.command("alive"))
 async def alive(_, message: Message):
     library_versions = {
-      » *"ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ": telegram.__version__,
-      » *"ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ": telethon.__version__,
-       » *"ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ": pyrogram.__version__,
+      » "ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ": telegram.__version__,
+      » "ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ": telethon.__version__,
+       » "ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ": pyrogram.__version__,
     }
 
     library_versions_text = "\n".join(
