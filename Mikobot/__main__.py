@@ -545,7 +545,7 @@ async def get_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 [
                     [
                         InlineKeyboardButton(
-                            text="OPEN IN PM",
+                            text="• 𝙊𝙋𝙀𝙉 𝙄𝙉 𝙋𝙍𝙄𝙑𝘼𝙏𝙀 •",
                             url="https://t.me/{}?start=help".format(
                                 context.bot.username
                             ),
@@ -553,7 +553,7 @@ async def get_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="OPEN HERE",
+                            text="• 𝙊𝙋𝙀𝙉 𝙃𝙀𝙍𝙀 •",
                             callback_data="help_back",
                         )
                     ],
