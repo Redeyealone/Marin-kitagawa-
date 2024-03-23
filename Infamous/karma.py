@@ -70,8 +70,8 @@ GROUP_START_BTN = [
     [
         InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}"),
         InlineKeyboardButton(text="CREATOR", url=f"tg://user?id={OWNER_ID}"),
-        
-    ],        InlineKeyboardButton(text="NETWORK", url=f"https://t.me/SHINOBI_NETWORK"),
+        InlineKeyboardButton(text="NETWORK", url=f"https://t.me/SHINOBI_NETWORK"),
+    ], 
 ]
 
 ALIVE_BTN = [
