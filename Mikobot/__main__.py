@@ -262,7 +262,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await message.reply_photo(
             photo=str(choice(START_IMG)),
             reply_markup=InlineKeyboardMarkup(GROUP_START_BTN),
-            caption="</b>ʜᴇʟʟᴏ {} . . .<b>ɪ ᴀᴍ ᴀʟɪᴠᴇ !</b>\n\n<b>Since​:</b> <code>{}</code>".format(
+            caption="</b>*ʜᴇʟʟᴏ* `{}` . . ."<b>ɪ ᴀᴍ ᴀʟɪᴠᴇ !</b>\n\n<b>Since​:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
