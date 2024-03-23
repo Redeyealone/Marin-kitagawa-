@@ -18,7 +18,7 @@ class Config(object):
 
     # Event logs chat ID and message dump chat ID
     EVENT_LOGS = -1002074034670
-    MESSAGE_DUMP = 
+    MESSAGE_DUMP = -1002105665930
 
     # MongoDB configuration
     MONGO_DB_URI = "mongodb+srv://t45:t45@cluster0.plfylpo.mongodb.net/?retryWrites=true&w=majority"
