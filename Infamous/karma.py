@@ -1,6 +1,6 @@
-# https://github.com/Infamous-Hydra/YaeMiko
+# https://github.com/dilshadhasnain07/YaeMiko
 # https://github.com/Team-ProjectCodeX
-# https://t.me/O_okarma
+# https://t.me/hasnainkk
 
 # <============================================== IMPORTS =========================================================>
 from pyrogram.types import InlineKeyboardButton as ib
@@ -34,12 +34,16 @@ ALIVE_ANIMATION = [
 
 FIRST_PART_TEXT = "✨ *ʜᴇʟʟᴏ* `{}` . . ."
 
-PM_START_TEXT = "✨ *ɪ ᴀᴍ ᴍɪᴋᴏ, ᴀ ɢᴇɴꜱʜɪɴ ɪᴍᴘᴀᴄᴛ ᴛʜᴇᴍᴇᴅ ʀᴏʙᴏᴛ ᴡʜɪᴄʜ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ ꜱᴇᴄᴜʀᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ʜᴜɢᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ*"
+PM_START_TEXT = ✨ *ɪ ᴀᴍ ᴍɪᴋᴏ, ᴀ ɢᴇɴꜱʜɪɴ ɪᴍᴘᴀᴄᴛ ᴛʜᴇᴍᴇᴅ ʀᴏʙᴏᴛ ᴡʜɪᴄʜ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ ꜱᴇᴄᴜʀᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ʜᴜɢᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ.*
+────────────────
+
+─────────────────
+"""
 
 START_BTN = [
     [
         InlineKeyboardButton(
-            text="⇦ ADD ME ⇨",
+            text="⛩ ADD ME TO YOUR GROUP ⛩",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
@@ -59,24 +63,26 @@ START_BTN = [
 GROUP_START_BTN = [
     [
         InlineKeyboardButton(
-            text="⇦ ADD ME ⇨",
+            text="⛩ ADD ME TO YOUR GROUP ⛩",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
         InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}"),
         InlineKeyboardButton(text="CREATOR", url=f"tg://user?id={OWNER_ID}"),
-    ],
+        
+    ],        InlineKeyboardButton(text="NETWORK", url=f"https://t.me/SHINOBI_NETWORK"),
 ]
 
 ALIVE_BTN = [
     [
-        ib(text="UPDATES", url="https://t.me/Hydra_Updates"),
-        ib(text="SUPPORT", url="https://t.me/hydraXsupport"),
+        ib(text="UPDATES", url="https://t.me/ANIME_NETWORK07"),
+        ib(text="SUPPORT", url="https://t.me/SHINOBI_HEADQUATERS"),
+        ib(text="NETWORK", url="https://t.me/SHINOBI_NETWORK"),
     ],
     [
         ib(
-            text="⇦ ADD ME ⇨",
+            text="𝙰𝙳𝙳 𝙼𝙴 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 💫",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
