@@ -14,7 +14,7 @@ class Config(object):
     API_HASH = "e4055cd239464e50e69bd73057c05dd3"
 
     # Database configuration (PostgreSQL)
-    DATABASE_URL = "postgres://ierjlkr:OG4dxzO67Zret3Zii43Hhvujkg89WVry0n9KsHE@karma.db.elephantsql.com/ierjlkr"
+    DATABASE_URL = "postgres://oaykvtmj:bsIGPV7wmId1x1CNH9eqxQVX5t25cHI3@manny.db.elephantsql.com/oaykvtmj"
 
     # Event logs chat ID and message dump chat ID
     EVENT_LOGS = -1002074034670
