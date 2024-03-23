@@ -1,5 +1,5 @@
 # SOURCE https://github.com/Team-ProjectCodeX
-# CREATED BY https://t.me/O_okarma
+# CREATED BY https://t.me/hasnainkk
 # PROVIDED BY https://t.me/ProjectCodeX
 
 # <============================================== IMPORTS =========================================================>
@@ -22,25 +22,25 @@ from Mikobot import BOT_NAME, app
 @app.on_message(filters.command("alive"))
 async def alive(_, message: Message):
     library_versions = {
-        "PTB": telegram.__version__,
-        "TELETHON": telethon.__version__,
-        "PYROGRAM": pyrogram.__version__,
+      » *"ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ": telegram.__version__,
+      » *"ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ": telethon.__version__,
+       » *"ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ": pyrogram.__version__,
     }
 
     library_versions_text = "\n".join(
         [f"➲ **{key}:** `{value}`" for key, value in library_versions.items()]
     )
 
-    caption = f"""**HEY, I AM {BOT_NAME}**
+    caption = f"""**ʜᴇʏ, ɪ ᴀᴍ {BOT_NAME}**
 
-━━━━━━ 🌟✿🌟 ━━━━━━
-✪ **CREATOR:** [🄺🄰🅁🄼🄰](https://t.me/anime_Freakz)
+     ━━━━━━━━ 🝮✿🝮 ━━━━━━━━
+ **♛ ᴅᴇᴠᴏᴛᴇᴅ ᴛᴏ:** [Hasnain khan](https://t.me/hasnainkk)
 
 {library_versions_text}
 
-➲ **PYTHON:** `{version_info[0]}.{version_info[1]}.{version_info[2]}`
-➲ **BOT VERSION:** `2.0`
-━━━━━━ 🌟✿🌟 ━━━━━━"""
+» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{version_info[0]}.{version_info[1]}.{version_info[2]}`
+» ** ʙᴏᴛ ᴠᴇʀꜱɪᴏɴ:** `2.0`
+     ━━━━━━━━ 🝮✿🝮 ━━━━━━━━"""
 
     await message.reply_animation(
         random.choice(ALIVE_ANIMATION),
