@@ -1294,7 +1294,7 @@ class Fonts:
             "Y": "Y̑̈",
             "Z": "Z̑̈",
         }
-         for i, j in style.items():
+        for i, j in style.items():
             text = text.replace(i, j)
         return text
 
