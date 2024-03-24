@@ -14,7 +14,7 @@ from Mikobot import DEL_CMDS, DEV_USERS, DRAGONS, SUPPORT_CHAT, dispatcher
 
 # <=======================================================================================================>
 
-from Mikobotbot import (
+from Mikobot import (
     DEL_CMDS,
     DEMONS,
     DEV_USERS,
