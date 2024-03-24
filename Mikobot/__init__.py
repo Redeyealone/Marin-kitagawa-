@@ -8,6 +8,7 @@ import logging
 import os
 import sys
 import time
+import html
 from random import choice
 
 import telegram
@@ -18,7 +19,7 @@ from telegram.constants import ParseMode
 from telegram.ext import Application, ApplicationBuilder
 from telethon import TelegramClient, events
 from telethon.sessions import MemorySession
-from telegram import ParseMode, TelegramError
+
 # <=======================================================================================================>
 
 # <================================================= NECESSARY ======================================================>
