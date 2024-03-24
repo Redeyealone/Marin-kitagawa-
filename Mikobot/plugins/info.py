@@ -112,10 +112,10 @@ async def info(update: Update, context: ContextTypes.DEFAULT_TYPE):
         disaster_level_present = False
 
         if chat_obj.id == OWNER_ID:
-            head += "\n\n👑 <b>The disaster level of this person is My Owner.</b>"
+            head += "\n\n👑 <b>𝚃𝚑𝚒𝚜 𝚙𝚎𝚛𝚜𝚘𝚗 𝚒𝚜 𝚖𝚢 𝚘𝚠𝚗𝚎𝚛! 𝚃𝚑𝚎𝚢 𝚑𝚊𝚟𝚎 𝚝𝚘𝚝𝚊𝚕 𝚙𝚘𝚠𝚎𝚛 𝚘𝚟𝚎𝚛 𝚖𝚎.</b>"
             disaster_level_present = True
         elif chat_obj.id in DEV_USERS:
-            head += "\n\n🐉 <b>This user is a member of Infamous Hydra.</b>"
+            head += "\n\n🐉 <b>This user is a member of Yaemiko bot.</b>"
             disaster_level_present = True
         elif chat_obj.id in DRAGONS:
             head += "\n\n🐲 <b>The disaster level of this person is Dragon.</b>"
@@ -189,7 +189,7 @@ async def info(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 @support_plus
 async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    stats = "📊 <b>Miko-Bot's Statistics:</b>\n\n" + "\n".join(
+    stats = "📊 <b>Miko's Statistics:</b>\n\n" + "\n".join(
         [mod.__stats__() for mod in STATS]
     )
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
