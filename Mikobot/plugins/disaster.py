@@ -101,7 +101,7 @@ def addsudo(context: ContextTypes.DEFAULT_TYPE) -> str:
 @sudo_plus
 @gloggable
 def addsupport(
-    context: CallbackContext,
+    context: ContextTypes.DEFAULT_TYPE
 ) -> str:
     message = update.effective_message
     user = update.effective_user
