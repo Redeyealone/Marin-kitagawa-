@@ -930,7 +930,7 @@ class Fonts:
             "8": "⑧",
             "9": "⑨",
         }
-      for i, j in style.items():
+        for i, j in style.items():
             text = text.replace(i, j)
         return text
 
