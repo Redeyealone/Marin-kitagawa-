@@ -42,7 +42,7 @@ def check_user_id(user_id: int, context: ContextTypes) -> Optional[str]:
 
 @dev_plus
 @gloggable
-def addsudo(update: Update, context: ContextTypes) 
+def addsudo(update: Update, context: ContextTypes) -> str:
     message = update.effective_message
     user = update.effective_user
     chat = update.effective_chat
