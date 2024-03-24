@@ -897,7 +897,7 @@ async def admin_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
             return
 
         if user_member.status == ChatMemberStatus.OWNER:
-            await message.edit_text
+            await message.edit_text(
                 "This person CREATED the chat, how can I set a custom title for him?",
             )
             return
