@@ -5,7 +5,6 @@ import random
 
 import requests
 from PIL import Image, ImageDraw, ImageFont
-from Mikobot.plugins.nightmode import button_row
 from Mikobot import BOT_USERNAME, OWNER_ID,BOT_NAME, SUPPORT_CHAT
 from Mikobot.events import register
 
