@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from Mikobot.plugins.sql import BASE, SESSION
+from Database.sql import BASE, SESSION
 
 
 class Nightmode(BASE):
