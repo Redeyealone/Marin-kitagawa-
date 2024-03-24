@@ -6,6 +6,7 @@ from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
 
+
 spam_chats = []
 
 @client.on(events.NewMessage(pattern="^@tagall ?(.*)"))
