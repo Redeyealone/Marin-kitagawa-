@@ -7,7 +7,7 @@ from Mikobot import (
     BOT_USERNAME)
 
 from Mikobot.events import register
-from Mikobot.modules.sql.night_mode_sql import (
+from Mikobot.Database.sql.night_mode_sql import (
     add_nightmode,
     get_all_chat_id,
     is_nightmode_indb,
