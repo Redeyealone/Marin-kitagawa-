@@ -798,7 +798,7 @@ async def admin_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
             return
 
         try:
-user_id = int(splitter[2])
+            user_id = int(splitter[2])
         except:
             user_id = splitter[2]
             await message.edit_text(
