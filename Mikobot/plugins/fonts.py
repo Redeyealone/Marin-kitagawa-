@@ -1,7 +1,7 @@
 from pyrogram import  filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from Mikoobot.utils.fonts import Fonts
+from Mikobot.utils.fonts import Fonts
 from Mikobot import pbot
 
 @pbot.on_message(filters.command(["font", "fonts"]))
