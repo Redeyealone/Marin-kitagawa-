@@ -102,6 +102,19 @@ __help__ = """
 » /broadcastusers
 
 » /broadcastgroups
+
+ʟɪsᴛ ᴀʟʟ sᴘᴇᴄɪᴀʟ ᴜsᴇʀs:
+ ❍ /sudolist: ʟɪsᴛs ᴀʟʟ ᴅʀᴀɢᴏɴ ᴅɪsᴀsᴛᴇʀs
+ ❍ /supportlist : ʟɪsᴛs ᴀʟʟ ᴅᴇᴍᴏɴ ᴅɪsᴀsᴛᴇʀs
+ ❍ /tigers : ʟɪsᴛs ᴀʟʟ ᴛɪɢᴇʀs ᴅɪsᴀsᴛᴇʀs
+ ❍ /wolves : ʟɪsᴛs ᴀʟʟ ᴡᴏʟғ ᴅɪsᴀsᴛᴇʀs
+ ❍ /devlist : ʟɪsᴛs ᴀʟʟ ʜᴇʀᴏ ᴀssᴏᴄɪᴀᴛɪᴏɴ
+ ᴍᴇᴍʙᴇʀs
+ ❍ /addsudo  : ᴀᴅᴅs ᴀ ᴜsᴇʀ ᴛᴏ ᴅʀᴀɢᴏɴ
+ ❍ /adddemon : ᴀᴅᴅs ᴀ ᴜsᴇʀ ᴛᴏ ᴅᴇᴍᴏɴ
+ ❍ /addtiger : ᴀᴅᴅs ᴀ ᴜsᴇʀ ᴛᴏ ᴛɪɢᴇʀ
+ ❍ /addwolf: ᴀᴅᴅs ᴀ ᴜsᴇʀ ᴛᴏ ᴡᴏʟғ
+ ❍ ᴀᴅᴅ ᴅᴇᴠ ᴅᴏᴇsɴᴛ ᴇxɪsᴛ, ᴅᴇᴠs sʜᴏᴜʟᴅ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴀᴅᴅ ᴛʜᴇᴍsᴇʟᴠᴇs
 """
 
 __mod_name__ = "BOT-ADMIN"
