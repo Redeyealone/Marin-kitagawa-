@@ -5,9 +5,9 @@ import random
 
 import requests
 from PIL import Image, ImageDraw, ImageFont
-from MukeshRobot.modules.nightmode import button_row
-from MukeshRobot import BOT_USERNAME, OWNER_ID,BOT_NAME, SUPPORT_CHAT, telethn
-from MukeshRobot.events import register
+from Mikobot.modules.nightmode import button_row
+from Mikobot import BOT_USERNAME, OWNER_ID,BOT_NAME, SUPPORT_CHAT, telethn
+from Mikobot.events import register
 
 LOGO_LINKS = [
     "https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
