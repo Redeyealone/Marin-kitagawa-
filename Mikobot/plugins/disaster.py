@@ -25,14 +25,22 @@ from Mikobot.plugins.log_channel import gloggable
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "Mikobot/elevated_users.json")
 
-def get_user_info(context: ContextTypes.DEFAULT_TYPE, user_id):
-    user_info = await get_chat_member(context, user_id)
-    return user_info.user.first_name if user_info else "Unknown User"
+def check_user_id(user_id: int, context: ContextTypes)
+    bot = context.bot
+    if not user_id:
+        reply = "That...is a chat! baka ka omae?"
+
+    elif user_id == bot.id:
+        reply = "This does not work that way."
+
+    else:
+        reply = None
+    return reply
 
 
 @dev_plus
 @gloggable
-def addsudo(update: Update, context: CallbackContext) -> str:
+def addsudo(update: Update, context: CallbackContext) 
     message = update.effective_message
     user = update.effective_user
     chat = update.effective_chat
