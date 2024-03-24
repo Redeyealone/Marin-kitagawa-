@@ -20,7 +20,9 @@ from telegram.constants import ParseMode
 from telegram.ext import Application, ApplicationBuilder
 from telethon import TelegramClient, events
 from telethon.sessions import MemorySession
-
+from telegram import ParseMode, TelegramError, Update
+from telegram.ext import CallbackContext, CommandHandler
+from telegram.utils.helpers import mention_html
 # <=======================================================================================================>
 
 # <================================================= NECESSARY ======================================================>
