@@ -25,6 +25,9 @@ from Mikobot.plugins.log_channel import gloggable
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "Mikobot/elevated_users.json")
 
+def get_user_info(context: ContextTypes.DEFAULT_TYPE, user_id):
+    user_info = await get_chat_member(context, user_id)
+    return user_info.user.first_name if user_info else "Unknown User"
 
 
 @dev_plus
