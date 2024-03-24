@@ -5,7 +5,7 @@ from typing import Optional
 
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler
-from telegram.utils.helpers import mention_html
+from Mikobot.utils.helpers import mention_html
 
 from Mikobot import (
     DEMONS,
