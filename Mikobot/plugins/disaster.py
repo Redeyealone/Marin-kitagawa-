@@ -562,7 +562,6 @@ TIGER_HANDLER = "addtiger"
 WHITELIST_HANDLER = "addwhitelist", "addwolf"
 UNSUDO_HANDLER = "removesudo", "rmsudo"
 UNSUPPORT_HANDLER = "removesupport", "removedemon"
-)
 UNTIGER_HANDLER = "removetiger"
 UNWHITELIST_HANDLER = "removewhitelist", "removewolf"
 WHITELISTLIST_HANDLER = "whitelistlist", "wolves"
