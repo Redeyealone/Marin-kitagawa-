@@ -8,9 +8,7 @@ import logging
 import os
 import sys
 import time
-import html
 from random import choice
-from typing import Optional
 
 import telegram
 import telegram.ext as tg
@@ -20,8 +18,7 @@ from telegram.constants import ParseMode
 from telegram.ext import Application, ApplicationBuilder
 from telethon import TelegramClient, events
 from telethon.sessions import MemorySession
-from telegram.ext import CallbackContext, CommandHandler
-from telegram.utils.helpers import mention_html
+
 # <=======================================================================================================>
 
 # <================================================= NECESSARY ======================================================>
