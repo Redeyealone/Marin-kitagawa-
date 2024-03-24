@@ -3,8 +3,8 @@ import json
 import os
 from typing import Optional
 
-from telegram import ParseMode, TelegramError, Update
-from telegram.ext import CallbackContext, CommandHandler
+from Mikobot import ParseMode, TelegramError, Update
+from Mikobot.ext import CallbackContext, CommandHandler
 from Mikobot.utils.helpers import mention_html
 
 from Mikobot import (
