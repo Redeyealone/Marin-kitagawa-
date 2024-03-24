@@ -5,6 +5,7 @@ from time import perf_counter
 
 from cachetools import TTLCache
 from telegram import Chat, ChatMember, ChatMemberAdministrator, ChatMemberOwner, Update
+from telegram.ext import CallbackContext
 from telegram.constants import ChatMemberStatus, ChatType
 from telegram.error import Forbidden
 from telegram.ext import ContextTypes
