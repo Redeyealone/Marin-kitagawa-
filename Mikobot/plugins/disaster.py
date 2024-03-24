@@ -556,7 +556,7 @@ __help__ = f"""
 ᴠɪsɪᴛ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ]("https://t.me{SUPPORT_CHAT}") ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.
 """
 
-SUDO_HANDLER = add_CommandHandler(("addsudo", "adddragon"), addsudo, run_async=True)
+SUDO_HANDLER = add_handler(("addsudo", "adddragon"), addsudo, run_async=True)
 SUPPORT_HANDLER = CommandHandler(("addsupport", "adddemon"), addsupport, run_async=True)
 TIGER_HANDLER = CommandHandler(("addtiger"), addtiger, run_async=True)
 WHITELIST_HANDLER = CommandHandler(
