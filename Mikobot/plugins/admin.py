@@ -1125,7 +1125,7 @@ function(ADMIN_CALLBACK_HANDLER)
 
 __mod_name__ = "ADMIN"
 __command_list__ = [
-    "adminlist",
+    "admins",
     "admins",
     "invitelink",
     "promote",
@@ -1136,7 +1136,7 @@ __command_list__ = [
     "delgpic",
 ]
 __handlers__ = [
-    ADMINLIST_HANDLER,
+    ADMINS_HANDLER,
     PIN_HANDLER,
     UNPIN_HANDLER,
     INVITE_HANDLER,
