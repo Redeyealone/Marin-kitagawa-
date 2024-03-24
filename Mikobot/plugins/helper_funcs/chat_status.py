@@ -2,8 +2,10 @@ from functools import wraps
 from threading import RLock
 from time import perf_counter
 
-from cachetools import TTLCache
-from telegram import Chat, ChatMember, ParseMode, Update
+from cachetools import TTLCachefrom telegram import Chat, ChatMember, ChatMemberAdministrator, ChatMemberOwner, Update
+from telegram.constants import ChatMemberStatus, ChatType
+from telegram.error import Forbidden
+from telegram.ext import ContextTypes
 from telegram.ext import CallbackContext
 
 from Mikobotbot import (
