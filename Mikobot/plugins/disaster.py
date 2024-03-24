@@ -15,13 +15,13 @@ from Mikobot import (
     WOLVES,
     dispatcher,
 )
-from MukeshRobot.plugins.helper_funcs.chat_status import (
+from Mikobot.plugins.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from MukeshRobot.modules.helper_funcs.extraction import extract_user
-from MukeshRobot.modules.log_channel import gloggable
+from Mikobot.plugins.helper_funcs.extraction import extract_user
+from Mikobot.plugins.log_channel import gloggable
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "Mikobot/elevated_users.json")
 
