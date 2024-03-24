@@ -6,7 +6,7 @@
 from pyrogram.types import InlineKeyboardButton as ib
 from telegram import InlineKeyboardButton
 
-from Mikobot import BOT_USERNAME, OWNER_ID, SUPPORT_CHAT
+from MukeshRobot import BOT_USERNAME, OWNER_ID, SUPPORT_CHAT
 
 # <============================================== CONSTANTS =========================================================>
 START_IMG = [
