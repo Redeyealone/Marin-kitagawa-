@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from Mikobot import ParseMode, TelegramError, Update
+from Mikobot import ParseMode, MikobotError, Update
 from Mikobot.ext import CallbackContext, CommandHandler
 from Mikobot.utils.helpers import mention_html
 
