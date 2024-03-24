@@ -5,7 +5,7 @@ from telethon import TelegramClient, events, Button
 from Mikobot import (
     BOT_NAME,
     BOT_USERNAME)
-from Mikobot import telethn as tbot
+
 from Mikobot.events import register
 from Mikobot.modules.sql.night_mode_sql import (
     add_nightmode,
