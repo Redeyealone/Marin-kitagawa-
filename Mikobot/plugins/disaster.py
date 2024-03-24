@@ -571,19 +571,6 @@ SUDOLIST_HANDLER = "sudolist"
 DEVLIST_HANDLER = "devlist"
 
 
-dispatcher.add_handler(SUDO_HANDLER)
-dispatcher.add_handler(SUPPORT_HANDLER)
-dispatcher.add_handler(TIGER_HANDLER)
-dispatcher.add_handler(WHITELIST_HANDLER)
-dispatcher.add_handler(UNSUDO_HANDLER)
-dispatcher.add_handler(UNSUPPORT_HANDLER)
-dispatcher.add_handler(UNTIGER_HANDLER)
-dispatcher.add_handler(UNWHITELIST_HANDLER)
-dispatcher.add_handler(WHITELISTLIST_HANDLER)
-dispatcher.add_handler(TIGERLIST_HANDLER)
-dispatcher.add_handler(SUPPORTLIST_HANDLER)
-dispatcher.add_handler(SUDOLIST_HANDLER)
-dispatcher.add_handler(DEVLIST_HANDLER)
 
 __mod_name__ = "DEVS"
 __handlers__ = [
