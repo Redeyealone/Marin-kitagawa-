@@ -570,8 +570,9 @@ SUPPORTLIST_HANDLER = "supportlist"
 SUDOLIST_HANDLER = "sudolist"
 DEVLIST_HANDLER = "devlist"
 
-dispatcher.add.handler(SUDO_HANDLER)
-dispatcher.add.handler(SUPPORT_HANDLER)
+
+add_handler(SUDO_HANDLER)
+dispatcher.add_handler(SUPPORT_HANDLER)
 dispatcher.add_handler(TIGER_HANDLER)
 dispatcher.add_handler(WHITELIST_HANDLER)
 dispatcher.add_handler(UNSUDO_HANDLER)
