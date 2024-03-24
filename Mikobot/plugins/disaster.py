@@ -212,7 +212,7 @@ def addwhitelist(context: ContextTypes.DEFAULT_TYPE) -> str:
 
 @sudo_plus
 @gloggable
-def addtiger(update: Update, context: CallbackContext) -> str:
+def addtiger(context: ContextTypes.DEFAULT_TYPE) -> str:
     message = update.effective_message
     user = update.effective_user
     chat = update.effective_chat
@@ -272,7 +272,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
 
 @dev_plus
 @gloggable
-def removesudo(update: Update, context: CallbackContext) -> str:
+def removesudo(context: ContextTypes.DEFAULT_TYPE) -> str:
     message = update.effective_message
     user = update.effective_user
     chat = update.effective_chat
