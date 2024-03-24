@@ -26,7 +26,7 @@ from Mikobot.plugins.log_channel import gloggable
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "Mikobot/elevated_users.json")
 
 
-    bot = context.bot
+  def  bot = context.bot
     if not user_id:
         reply = "That...is a chat! baka ka omae?"
 
