@@ -571,7 +571,7 @@ SUDOLIST_HANDLER = "sudolist"
 DEVLIST_HANDLER = "devlist"
 
 
-dispatcher.add_handler(SUDO_HANDLER)
+function(SUDO_HANDLER)
 dispatcher.add_handler(SUPPORT_HANDLER)
 dispatcher.add_handler(TIGER_HANDLER)
 dispatcher.add_handler(WHITELIST_HANDLER)
