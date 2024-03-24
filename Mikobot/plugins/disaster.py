@@ -557,26 +557,19 @@ __help__ = f"""
 """
 
 SUDO_HANDLER = "addsudo"
-SUPPORT_HANDLER = CommandHandler(("addsupport", "adddemon"), addsupport, run_async=True)
-TIGER_HANDLER = CommandHandler(("addtiger"), addtiger, run_async=True)
-WHITELIST_HANDLER = CommandHandler(
-    ("addwhitelist", "addwolf"), addwhitelist, run_async=True
+SUPPORT_HANDLER = "addsupport", "adddemon"
+TIGER_HANDLER = "addtiger"
+WHITELIST_HANDLER = "addwhitelist", "addwolf"
+UNSUDO_HANDLER = "removesudo", "rmsudo"
+UNSUPPORT_HANDLER = "removesupport", "removedemon"
 )
-UNSUDO_HANDLER = CommandHandler(("removesudo", "rmsudo"), removesudo, run_async=True)
-UNSUPPORT_HANDLER = CommandHandler(
-    ("removesupport", "removedemon"), removesupport, run_async=True
-)
-UNTIGER_HANDLER = CommandHandler(("removetiger"), removetiger, run_async=True)
-UNWHITELIST_HANDLER = CommandHandler(
-    ("removewhitelist", "removewolf"), removewhitelist, run_async=True
-)
-WHITELISTLIST_HANDLER = CommandHandler(
-    ["whitelistlist", "wolves"], whitelistlist, run_async=True
-)
-TIGERLIST_HANDLER = CommandHandler(["tigers"], tigerlist, run_async=True)
-SUPPORTLIST_HANDLER = CommandHandler("supportlist", supportlist, run_async=True)
-SUDOLIST_HANDLER = CommandHandler("sudolist", sudolist, run_async=True)
-DEVLIST_HANDLER = CommandHandler("devlist", devlist, run_async=True)
+UNTIGER_HANDLER = "removetiger"
+UNWHITELIST_HANDLER = "removewhitelist", "removewolf"
+WHITELISTLIST_HANDLER = "whitelistlist", "wolves"
+TIGERLIST_HANDLER = "tigers"
+SUPPORTLIST_HANDLER = "supportlist"
+SUDOLIST_HANDLER = "sudolist"
+DEVLIST_HANDLER = "devlist"
 
 
 dispatcher.add_handler(SUDO_HANDLER)
