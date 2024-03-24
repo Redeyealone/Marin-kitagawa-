@@ -1111,7 +1111,7 @@ ADMIN_CALLBACK_HANDLER = CallbackQueryHandler(
     admin_callback, block=False, pattern=r"admin_"
 )
 
-function(ADMINS_HANDLER)
+function(ADMINLIST_HANDLER)
 function(PIN_HANDLER)
 function(UNPIN_HANDLER)
 function(UNPINALL_HANDLER)
@@ -1125,7 +1125,7 @@ function(ADMIN_CALLBACK_HANDLER)
 
 __mod_name__ = "ADMIN"
 __command_list__ = [
-    "admins",
+    "adminlist",
     "admins",
     "invitelink",
     "promote",
@@ -1136,7 +1136,7 @@ __command_list__ = [
     "delgpic",
 ]
 __handlers__ = [
-    ADMINS_HANDLER,
+    ADMINLIST_HANDLER,
     PIN_HANDLER,
     UNPIN_HANDLER,
     INVITE_HANDLER,
