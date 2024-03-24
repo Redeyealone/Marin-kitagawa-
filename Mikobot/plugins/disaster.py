@@ -27,7 +27,7 @@ from Mikobot.plugins.log_channel import gloggable
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "Mikobot/elevated_users.json")
 
-def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
+def check_user_id(user_id: int, context: ContextTypes) -> Optional[str]:
     bot = context.bot
     if not user_id:
         reply = "That...is a chat! baka ka omae?"
@@ -42,7 +42,7 @@ def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
 
 @dev_plus
 @gloggable
-def addsudo(update: Update, context: CallbackContext) 
+def addsudo(update: Update, context: ContextTypes) 
     message = update.effective_message
     user = update.effective_user
     chat = update.effective_chat
