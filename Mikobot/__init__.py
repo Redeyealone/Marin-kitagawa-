@@ -17,6 +17,7 @@ from pyrogram import Client, errors
 from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.constants import ParseMode
 from telegram.ext import Application, ApplicationBuilder
+from telegram import ParseMode, TelegramError, Update
 from telethon import TelegramClient, events
 from telethon.sessions import MemorySession
 
