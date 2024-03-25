@@ -1,10 +1,10 @@
 # SOURCE https://github.com/Team-ProjectCodeX
-# CREATED BY https://t.me/hasnainkk
-# PROVIDED BY https://t.me/ANIME_NETWORK07
+# CREATED BY https://t.me/O_okarma
+# PROVIDED BY https://t.me/ProjectCodeX
+# ➥ @YaeMiko_Roxbot ʏᴏᴜʀ ᴍᴇssᴀɢᴇ @ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ᴜsᴇʀɪᴅ
+# ➥ @YaeMiko_Roxbot @ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ᴜsᴇʀɪᴅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ
 
-# TURN ON INLINE MODE FOR USE.
 
-# <============================================== IMPORTS =========================================================>
 import shortuuid
 from pymongo import MongoClient
 from telegram import (
@@ -12,19 +12,17 @@ from telegram import (
     InlineKeyboardMarkup,
     InlineQueryResultArticle,
     InputTextMessageContent,
-    Update,
 )
-from telegram.ext import CallbackQueryHandler, ContextTypes, InlineQueryHandler
+from telegram.ext import CallbackQueryHandler, InlineQueryHandler
 
-from Mikobot import DB_NAME, MONGO_DB_URI, function
+from Yourbot import MONGO_DB_URL, dispatcher
 
 # Initialize MongoDB client
-client = MongoClient(MONGO_DB_URI)
-db = client[DB_NAME]
-collection = db["whispers"]
+client = MongoClient(MONGO_DB_URL)
+db = client["whisperdb"]
+collection = db["whisper"]
 
 
-# <==================================================== CLASS ===================================================>
 # Whispers Class
 class Whispers:
     @staticmethod
@@ -42,12 +40,11 @@ class Whispers:
         return whisper["whisperData"] if whisper else None
 
 
-# <==================================================== BOOT FUNCTION ===================================================>
 # Inline query handler
-async def mainwhisper(update: Update, context: ContextTypes.DEFAULT_TYPE):
+def mainwhisper(update, context):
     query = update.inline_query
     if not query.query:
-        return await query.answer(
+        return query.answer(
             [],
             switch_pm_text="Give me a username or ID!",
             switch_pm_parameter="ghelp_whisper",
@@ -61,7 +58,7 @@ async def mainwhisper(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if user.isdigit():
         try:
-            chat = await context.bot.get_chat(int(user))
+            chat = context.bot.get_chat(int(user))
             user = f"@{chat.username}" if chat.username else chat.first_name
         except Exception:
             pass
@@ -99,17 +96,17 @@ async def mainwhisper(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
     ]
 
-    await context.bot.answer_inline_query(query.id, answers)
+    context.bot.answer_inline_query(query.id, answers)
 
 
 # Callback query handler
-async def showWhisper(update: Update, context: ContextTypes.DEFAULT_TYPE):
+def showWhisper(update, context):
     callback_query = update.callback_query
     whisperId = callback_query.data.split("_")[-1]
     whisper = Whispers.get_whisper(whisperId)
 
     if not whisper:
-        await context.bot.answer_callback_query(
+        context.bot.answer_callback_query(
             callback_query.id, "This whisper is not valid anymore!"
         )
         return
@@ -118,7 +115,7 @@ async def showWhisper(update: Update, context: ContextTypes.DEFAULT_TYPE):
     from_user_id = callback_query.from_user.id
 
     if from_user_id == whisper["user"]:
-        await context.bot.answer_callback_query(
+        context.bot.answer_callback_query(
             callback_query.id, whisper["message"], show_alert=True
         )
     elif (
@@ -127,15 +124,15 @@ async def showWhisper(update: Update, context: ContextTypes.DEFAULT_TYPE):
         and callback_query.from_user.username.lower()
         == whisper["withuser"].replace("@", "").lower()
     ):
-        await context.bot.answer_callback_query(
+        context.bot.answer_callback_query(
             callback_query.id, whisper["message"], show_alert=True
         )
     elif userType == "id" and from_user_id == int(whisper["withuser"]):
-        await context.bot.answer_callback_query(
+        context.bot.answer_callback_query(
             callback_query.id, whisper["message"], show_alert=True
         )
     else:
-        await context.bot.answer_callback_query(
+        context.bot.answer_callback_query(
             callback_query.id, "Not your Whisper!", show_alert=True
         )
 
@@ -160,21 +157,6 @@ def parse_user_message(query_text):
     return user, message
 
 
-# <==================================================== FUNCTION ===================================================>
 # Add handlers
-function(InlineQueryHandler(mainwhisper, block=False))
-function(CallbackQueryHandler(showWhisper, pattern="^whisper_", block=False))
-
-
-# <==================================================== HELP ===================================================>
-__help__ = """
-➠ *Whisper inline function for secret chats.*
-
-➠ *Commands:*
-
-» @botusername your message
-» @botusername your message
-"""
-
-__mod_name__ = "WHISPER-MSG"
-# <==================================================== END ===================================================>
+dispatcher.add_handler(InlineQueryHandler(mainwhisper))
+dispatcher.add_handler(CallbackQueryHandler(showWhisper, pattern="^whisper_"))
