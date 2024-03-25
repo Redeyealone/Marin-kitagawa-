@@ -514,6 +514,17 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             disable_web_page_preview=True,
         )
 
+def Music_about_callback(update: Update, context: CallbackContext):
+    query = update.callback_query
+    if query.data == "Music_":
+        query.message.edit_caption(f"""
+ ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜ ꜰᴏʀ ᴍᴜꜱɪᴄ 
+""", 
+
+        [
+                        InlineKeyboardButton(text="• BACK •", callback_data="Main_help")
+                    ],
+
 elif query.data == "Music_admin":
         query.message.edit_caption(f"*» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*"
             f"""
