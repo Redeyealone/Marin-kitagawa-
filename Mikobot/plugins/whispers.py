@@ -13,9 +13,8 @@ from telegram import (
     InlineQueryResultArticle,
     InputTextMessageContent,
 )
-from telegram.ext import CallbackQueryHandler, InlineQueryHandler
-
-from Yourbot import MONGO_DB_URL, dispatcher
+from telegram.ext import CallbackQueryHandler, InlineQueryHandler 
+import MONGO_DB_URL, dispatcher
 
 # Initialize MongoDB client
 client = MongoClient(MONGO_DB_URL)
