@@ -55,7 +55,7 @@ START_BTN = [
         InlineKeyboardButton(text="DETAILS", callback_data="Miko_"),
         InlineKeyboardButton(text="AI", callback_data="ai_handler"),
         InlineKeyboardButton(text="SOURCE", callback_data="git_source"),
-        InlineKeyboardButton(text="MUSIC", callback_data="Miko_"),
+        InlineKeyboardButton(text="MUSIC", callback_data="Music_"),
     ],
     [
         InlineKeyboardButton(text="CREATOR", url=f"tg://user?id={OWNER_ID}"),
