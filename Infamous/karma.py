@@ -6,7 +6,7 @@
 from pyrogram.types import InlineKeyboardButton as ib
 from telegram import InlineKeyboardButton
 
-from MukeshRobot import BOT_USERNAME, OWNER_ID, SUPPORT_CHAT
+from Mikobot import BOT_USERNAME, OWNER_ID, SUPPORT_CHAT
 
 # <============================================== CONSTANTS =========================================================>
 START_IMG = [
@@ -55,6 +55,7 @@ START_BTN = [
         InlineKeyboardButton(text="DETAILS", callback_data="Miko_"),
         InlineKeyboardButton(text="AI", callback_data="ai_handler"),
         InlineKeyboardButton(text="SOURCE", callback_data="git_source"),
+        InlineKeyboardButton(text="MUSIC", callback_data="Miko_"),
     ],
     [
         InlineKeyboardButton(text="CREATOR", url=f"tg://user?id={OWNER_ID}"),
