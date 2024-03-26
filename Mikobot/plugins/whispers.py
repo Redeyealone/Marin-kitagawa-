@@ -1,8 +1,8 @@
 # SOURCE https://github.com/Team-ProjectCodeX
-# CREATED BY https://t.me/O_okarma
+# CREATED BY https://t.me/hasnainkk
 # PROVIDED BY https://t.me/ProjectCodeX
-# ➥ @YaeMiko_Roxbot ʏᴏᴜʀ ᴍᴇssᴀɢᴇ @ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ᴜsᴇʀɪᴅ
-# ➥ @YaeMiko_Roxbot @ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ᴜsᴇʀɪᴅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ
+# ➥ @YaeMiko_vbot ʏᴏᴜʀ ᴍᴇssᴀɢᴇ @ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ᴜsᴇʀɪᴅ
+# ➥ @YaeMiko_vbot @ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ᴜsᴇʀɪᴅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ
 
 
 import shortuuid
@@ -160,3 +160,18 @@ def parse_user_message(query_text):
 # Add handlers
 dispatcher.add_handler(InlineQueryHandler(mainwhisper))
 dispatcher.add_handler(CallbackQueryHandler(showWhisper, pattern="^whisper_"))
+
+
+
+# <==================================================== HELP ===================================================>
+__help__ = """
+➠ *Whisper inline function for secret chats.*
+
+➠ *Commands:*
+
+» @Yaemiko_vbot your message @username
+» @Yaemiko_vbot @username your message
+"""
+
+__mod_name__ = "WHISPER-MSG"
+# <==================================================== END =
