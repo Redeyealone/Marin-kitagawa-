@@ -1125,8 +1125,8 @@ function(ADMIN_CALLBACK_HANDLER)
 
 __mod_name__ = "ADMIN"
 __command_list__ = [
-    "adminlist",
     "admins",
+    "adminlist",
     "invitelink",
     "promote",
     "demote",
