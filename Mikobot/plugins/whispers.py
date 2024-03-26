@@ -19,7 +19,7 @@ from telegram import (
 from telegram.ext import CallbackQueryHandler, ContextTypes, InlineQueryHandler
 
 from Mikobot import DB_NAME, MONGO_DB_URI, function
-
+from Whispers.PTB.whispers import *
 
 # Initialize MongoDB client
 client = MongoClient(MONGO_DB_URI)
