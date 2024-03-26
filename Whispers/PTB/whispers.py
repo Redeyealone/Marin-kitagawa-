@@ -15,10 +15,10 @@ from telegram import (
 )
 from telegram.ext import CallbackQueryHandler, InlineQueryHandler
 
-from Yourbot import MONGO_DB_URL, dispatcher
+from Mikobot import MONGO_DB_URI, dispatcher
 
 # Initialize MongoDB client
-client = MongoClient(MONGO_DB_URL)
+client = MongoClient(MONGO_DB_URI)
 db = client["whisperdb"]
 collection = db["whisper"]
 
