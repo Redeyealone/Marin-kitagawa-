@@ -66,7 +66,9 @@ async def hclose(_, cq):
         pass
 
   # <============================================ HELP =====================================>
-
+__help__ = """
+➠ *This command work for hentai.*
+    
 ➠ *Commands:*
 
 » /hanime
