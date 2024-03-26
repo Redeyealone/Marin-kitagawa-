@@ -64,16 +64,3 @@ async def hclose(_, cq):
         await cq.message.delete()
     except:
         pass
-
-  # <============================================ HELP =====================================>
-__help__ = """
-➠ *This command work for hentai.*
-    
-➠ *Commands:*
-
-» /hanime
-"""
-
-
-  __mod_name__ = "HANIME"
-# <=============================================== END ==============================================>
