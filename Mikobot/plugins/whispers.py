@@ -14,7 +14,7 @@ from telegram import (
     InputTextMessageContent,
 )
 from telegram.ext import CallbackQueryHandler, InlineQueryHandler 
-from Mikobot import MONGO_DB_URL, dispatcher
+import MONGO_DB_URL, dispatcher
 
 # Initialize MongoDB client
 client = MongoClient(MONGO_DB_URL)
