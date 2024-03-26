@@ -1,5 +1,5 @@
 from Database.mongodb.db import dbname
-from Mikobot import MONGO_DB_URL, dispatcher
+from Mikobot import MONGO_DB_URI, dispatcher
 collection = dbname["whisper"]
 
 
