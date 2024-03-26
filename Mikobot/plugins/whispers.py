@@ -15,7 +15,7 @@ from telegram import (
 )
 from telegram.ext import CallbackQueryHandler, InlineQueryHandler
 
-from Mikobot import MONGO_DB_URL, dispatcher
+from Database.mongodb.whispers import MONGO_DB_URL, dispatcher
 
 # Initialize MongoDB client
 client = MongoClient(MONGO_DB_URL)
