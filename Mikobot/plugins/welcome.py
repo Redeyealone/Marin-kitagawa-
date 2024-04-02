@@ -37,7 +37,7 @@ from Mikobot.plugins.helper_funcs.misc import build_keyboard, revert_buttons
 from Mikobot.plugins.helper_funcs.msg_types import get_welcome_type
 from Mikobot.plugins.helper_funcs.string_handling import escape_invalid_curly_brackets
 from Mikobot.plugins.log_channel import loggable
-from Mikobot.utils.can_restrict import can_restrict
+from Mikobot.utlis.can_restrict import can_restrict
 
 # <=======================================================================================================>
 
