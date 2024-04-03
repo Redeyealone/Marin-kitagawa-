@@ -10,30 +10,31 @@ class Config(object):
 
     # <================================================ REQUIRED ======================================================>
     # Telegram API configuration
-    API_ID = 24683098 # Get this value from my.telegram.org/apps
-    API_HASH = "e4055cd239464e50e69bd73057c05dd3"
+    API_ID = "27389764"  # Get this value from my.telegram.org/apps
+    API_HASH = "75ecb2e1879c9e805c5aa934a5ff4b5f"
 
     # Database configuration (PostgreSQL)
-    DATABASE_URL = "postgres://oaykvtmj:bsIGPV7wmId1x1CNH9eqxQVX5t25cHI3@manny.db.elephantsql.com/oaykvtmj"
+    DATABASE_URL = "postgres://fodrfyzd:fozO611cVktRfkPLfRb1S52saC6AsKAe@castor.db.elephantsql.com/fodrfyzd"
 
     # Event logs chat ID and message dump chat ID
-    EVENT_LOGS = -1002074034670
-    MESSAGE_DUMP = -1002105665930
+    EVENT_LOGS = "-1001991974760"
+    MESSAGE_DUMP = "-1001991974760"
 
     # MongoDB configuration
-    MONGO_DB_URI = "mongodb+srv://herobh123456:hasnainkk07@hasnainkk07.uqjekii.mongodb.net/?retryWrites=true&w=majority"
+    MONGO_DB_URI = "mongodb+srv://Nonalcoholic:8eVPSTcJa2c3FkH@cluster0.bprf1b2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
     # Support chat and support ID
-    SUPPORT_CHAT = "ANIME_NETWORK07"
-    SUPPORT_ID = -1002074034670
+    SUPPORT_CHAT = "fubuki_supports"
+    SUPPORT_ID = "-1001991974760"
 
     # Database name
     DB_NAME = "MikoDB"
 
     # Bot token
-    TOKEN = "6798827644:AAFrnnRyY2FMBeRVLr3BepDvycrhFKrxZos"  # Get bot token from @BotFather on Telegram
+    TOKEN = "6872064337:AAGyofMcK81eno1XLCTG2f4LeRf9FacB-5Y"  # Get bot token from @BotFather on Telegram
 
     # Owner's Telegram user ID (Must be an integer)
-    OWNER_ID = 6346273488
+    OWNER_ID = "6083498673"
     # <=======================================================================================================>
 
     # <================================================ OPTIONAL ======================================================>
