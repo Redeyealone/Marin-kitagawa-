@@ -1,4 +1,4 @@
-from Mikobot import pbot as pgram, BOT_USERNAME
+from Mikobot import tbot as pgram, BOT_USERNAME
 from pyrogram import filters
 from pyrogram.types import (
     InlineQueryResultArticle, InputTextMessageContent,
