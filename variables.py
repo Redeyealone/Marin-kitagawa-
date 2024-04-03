@@ -31,7 +31,7 @@ class Config(object):
     DB_NAME = "MikoDB"
 
     # Bot token
-    TOKEN = "6872064337:AAGyofMcK81eno1XLCTG2f4LeRf9FacB-5Y"  # Get bot token from @BotFather on Telegram
+    TOKEN = "7092177721:AAFRm41i2XVcBbO5ski4VQYtZbvORmoI_qU"  # Get bot token from @BotFather on Telegram
 
     # Owner's Telegram user ID (Must be an integer)
     OWNER_ID = "6083498673"
